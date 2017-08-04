@@ -1,0 +1,367 @@
+<html>
+<head>
+    <title>bedspace</title>
+    <link rel="icon" href="img/favicon.ico"/>
+
+    <!--Import Google Icon Font-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+        body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+main {
+    flex: 1 0 auto;
+}
+    </style>
+</head>
+<body class="grey lighten-2">
+
+<header>
+    <div class="navbar-fixed">
+        <nav class="yellow lighten-2">
+            <div class="nav-wrapper container row">
+            <a id="logo-container" style="margin-top:15px;" href="#" class="brand-logo left col s4 pull-s2"><img src="img/logo3.png"></a>
+                <ul class="right hide-on-med-and-down col s8 push-s3">
+                    <li><a href="#!" class="light-blue-text "><i class="material-icons left">lock_open</i>Login</a></li>
+                    <li><a href="#!" class="light-blue-text"><i class="material-icons left">supervisor_account</i>Join Us</a></li>
+                    <li><a href="#!" class="light-blue-text add-venue btn waves-effect"><i class="material-icons left" style="font-size: 20px;">home</i><b>List Your Space</b></a></li>
+                    
+                    <!-- <li class="right"><a href="#!" class="light-blue-text"><i class="material-icons left">apps</i>Admin</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="index-banner" class="parallax-container header-pic" style="margin-bottom:13px;">
+    <div class="section no-pad-bot ">
+      <div class="container">
+        <br><br>
+         <h3 class="header center white-text text-lighten-2">GET COMFORATABLE ACCOMODATIONS <span class="hide-on-med-and-down">FOR AS LOW AS <br class="hide-on-med-and-up"><u>₦1000</u> ANYWHERE IN NIGERIA!</span><span class="hide-on-med-and-up home-sub">FOR AS LOW AS <br class="hide-on-med-and-up">1000 ANYWHERE IN NIGERIA!</<span></h3>
+        <div id="" class="row">
+                    <form action="{{ route('homesearch') }}" id="home-newsletter" class="col s12" method="POST" style="background: rgba(0,0,0,.7);">
+                       <!--  {{ csrf_field() }} -->
+                        <div class="input-field" >        
+                            
+                            <input name="city" class="col l4 m4 s10 search_input" placeholder="Where are you going to?" id="city_auto" required>
+                        </div>
+                        <div class="input-field" >        
+                            <input name="check_in_date" class="col l2 m4 s5 search_input" placeholder="Date" id="date_check_in" required >
+                        </div>
+                        <div class="input-field">
+                            
+                            <input name="no_of_guests" type="text" class="col l2 m4 s5 search_input" placeholder="Guests" id="guest_no" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit"  role="button" class="btn main-search  col l2 m4 s12 light-blue yellow-text"  value="Search" style="margin-left:30px;margin-top:10px;margin-bottom:25px;height:45px;">
+                        </div>
+                    </form>
+                </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/headr_bg.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+  <section class="" style="background-color:#b0e2ff;opacity:0.5;">
+    <div class="row lighten-3" style ="margin-top:-15px;padding-top:7.5px;background-color:#b0e2ff;">
+      <div class="container">
+      <div>
+      <h4 class="center"><b>Find Low Cost Boarding Online</b></h4>
+      </div>
+      <div class="center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+      
+    </div>
+    </div>
+    </div>
+
+  </section>
+  <!-- hero ends here -->
+  <section class="white">
+  <div class="container-margin ">
+  <div>
+      <h5 class="">Featured Listings</h5>
+  </div>
+  <div class="owl-carousel owl-theme" id="featuredblunt"><div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing1.jpg"> <span class="center info teal-text"><b>₦2000 - Comfy Bed in suite</b></span></a><div class="row">
+  
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      <div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing2.jpg"> <span class="center info teal-text"><b>₦2500 - Nice apartment</b></span></a><div class="row">
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      <div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing3.jpg"> <span class="center info teal-text"><b>₦1500 - brand new apartment</b></span></a><div class="row">
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      <div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing4.jpg"> <span class="center info teal-text"><b>₦1500 - tatefully finished</b></span></a><div class="row">
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      <div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing5.jpg"> <span class="center info teal-text"><b>₦1500 - secure and high brow</b></span></a><div class="row">
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      <div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing6.jpg">
+      
+      <span class="center info teal-text"><b>₦1500 - space for anything</b></span></a><div class="row">
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      <div class="item valign-wrapper card-image waves-effect waves-block waves-light"><a href=""><img style="height: 270px;width: 300px;" class="activator" src="img/listing7.jpg"><span class="center info teal-text"><b>₦1500 - cool and amazing</b></span></a><div class="row">
+                <p class="col l5 m6 s12">2 beds</p>
+                <ul class="icon-list col l7 m6 s12 right" itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                <i class="material-icons yellow-text text-lighten-2">star</i>
+                </ul>
+                </div>
+                </div>
+      
+  </div>
+  </div>
+  </section>
+
+    <section class="white">
+        
+        <div class="container-margin white">
+
+        <div class="row" style="margin-top:20px;">
+            <div class="col l4 m6 s12 center">
+                <div class="service-box">
+                <img src="img/secure_flat(3).png" alt="" class="sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "/> 
+                    <h3><b>Secure</b></h3>
+                    <p><b>It takes less than a minute to sign up</b></p>
+                </div>
+            </div>
+
+            <div class="col l4 m6 s12 center">
+                <div class="service-box">
+                <img src="img/bed_flat2.jpg" alt="" class="sr-icons" data-sr-id="3" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "/> 
+                    <h3><b>Comfortable</b></h3>
+                    <p><b>Add a Vehicle(s) to be listed our our app for customers to order from you</b></p>
+                    </div>
+                </div>
+                <div class="col l4 m6 s12 center">
+                    <div class="service-box">
+                        <img src="img/affordat.jpg" alt="" class="sr-icons" data-sr-id="4" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "/>
+                        <h3><b>Affordable</b></h3>
+                        <p><b>Get Orders from customers and deliver</b></p>
+                    </div>
+                </div>
+                
+            </div>
+        <hr>
+    </section> 
+
+    
+
+
+
+<section class="white">
+
+    <h5 class="center">Popular Cities</h5>
+    <div class="row cities">
+        <div class="col s3">
+            <img src="img/abuja.jpg" style="height: 270px;width: 300px;">
+        </div>
+        <div class="col s3">
+            <img src="img/lagos.jpg" style="height: 270px;width: 300px;">
+        </div>
+        <div class="col s3">
+            <img src="img/portharcourt.jpg" style="height: 270px;width: 300px;">
+        </div>
+        <div class="col s3">
+            <img src="img/calabar.jpeg" style="height: 270px;width: 300px;">
+        </div>
+    </div>
+    <hr>
+</section>
+<section class="white">
+  <div class="row">
+      <div class="col s6 " style="">
+          <img src="img/host.jpg" style="max-height: 700px;max-width: 620px;">
+      </div>
+      <div class="col s6" style="max-height: 700px;max-width: 620px;">
+      <div style="height: 100px;width: 250px;margin-top: 30px;margin-left: 30%;" class="center-align">
+      
+      <div class="card-panel yellow lighten-2 center">
+          <b><h5 class="center">List your spaces for free and start earning</h5></b>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          </p>
+          <a href="" class="btn light-blue yellow-text">Get Started</a>
+        </div>
+        
+          
+      </div>
+          
+      </div>
+  </div>
+</section>
+
+    <div id="avis1" class="modal">
+        <div class="modal-content">
+            <h4>Ajouter un avis</h4>
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="1" type="text" class="validate">
+                    <label for="1">Nom</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="1" type="text" class="validate">
+                    <label for="1">Prenom</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="1" type="text" class="validate">
+                    <label for="1">Titre</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                </div>
+            </div>
+
+            <p>Note*</p>
+
+            <p>*champ requis</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="modal-action modal-close btn waves-effect waves-light" type="submit" name="action">
+                Envoyer
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn" style="bottom: 85px; right: 45px;">
+        <a class="btn-floating btn-large light-blue modal-trigger" href="#avis1">
+            <i class="large material-icons yellow-text text-lighten-2">mode_edit</i>
+        </a>
+    </div>
+</main>
+
+<footer class="page-footer yellow lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 s12">
+                <h5 class="grey-text text-darken-2">Footer title</h5>
+                <p class="light-blue-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec neque enim. Morbi semper vel leo at consequat. Etiam fermentum, turpis quis tincidunt vulputate, arcu magna posuere ligula, in laoreet leo urna eget urna. Suspendisse tincidunt metus.</p>
+            </div>
+
+            <div class="col l3 offset-l1 m6 s12">
+                <h5 class="grey-text text-darken-2">Contact</h5>
+                <ul>
+                    <li class="grey-text text-darken-2">Email:</li>
+                    <li><a class="light-blue-text" href="mailto:test@toto.fr">test@toto.fr</a></li>
+                    <li class="grey-text text-darken-2">Téléphone:</li>
+                    <li class="light-blue-text">00 00 00 00 00</li>
+                </ul>
+            </div>
+
+            <div class="col l3 offset-l1 m6 s12">
+                <h5 class="grey-text text-darken-2">Paiements acceptés</h5>
+                <ul>
+                    <li class="light-blue-text">
+                        <a class="waves-effect waves-light btn modal-trigger" href="#avis1">Modal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <span class="light-blue-text">Copyright © 2015 - 2017. Tous droits réservés.</span>
+            <a class="light-blue-text right" href="#!"><i class="fa fa-facebook-square"></i> Facebook</a>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".modal").modal();
+    });
+</script>
+</body>
+</html>
